@@ -7,7 +7,7 @@ app = Flask(__name__)
 def welcome():
     return f'Welcome to weather app'
 
-@app.route('/city')
+@app.route('/weather')
 def search_city():
     API_KEY = request.args.get('API_KEY')  # add your key here
     city = request.args.get('city')
